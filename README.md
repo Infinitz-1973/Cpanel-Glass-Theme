@@ -28,5 +28,6 @@ display: none;
 }
 </style>
 ```
-Now click on Save
+5.Now click on Save
+
 Note : The Sidebar can be removed only to The Account's under Reseller to Remove for the Reseller Contact your Provider.
