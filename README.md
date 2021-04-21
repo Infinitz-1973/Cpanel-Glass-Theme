@@ -21,6 +21,7 @@ New Cpanel Glass Theme for Older Versions of Cpanel/whm (Tested with Version 94.
 3.Now Open The File called "global_html_head.html.tt" If It's Not there Create One.
 
 4.Now Paste the following CSS In it
+
 ```
 <style>
 #sidebar{
