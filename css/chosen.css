@@ -1,0 +1,60 @@
+html[data-style="glass"] #content #ddlThemes_chosen,
+html[data-style="glass"] #content #ddlAccounts_chosen {
+  font-size: 14px;
+  /* When dropdown is focused */
+  /* When dropdown is expanded */
+}
+html[data-style="glass"] #content #ddlThemes_chosen .chosen-single,
+html[data-style="glass"] #content #ddlAccounts_chosen .chosen-single {
+  border: 1px solid #e4e9f2;
+  background-image: none;
+  background-color: #f7f9fc;
+  box-shadow: 0 0 transparent;
+  height: 34px;
+  padding-top: 4px;
+  color: #0a2540;
+}
+html[data-style="glass"] #content #ddlThemes_chosen .chosen-single div,
+html[data-style="glass"] #content #ddlAccounts_chosen .chosen-single div {
+  padding-top: 5px;
+}
+html[data-style="glass"] #content #ddlThemes_chosen.chosen-container-active .chosen-single,
+html[data-style="glass"] #content #ddlAccounts_chosen.chosen-container-active .chosen-single {
+  background-color: #ffffff;
+  color: #0a2540;
+  border: 1px solid #8f9bb3;
+}
+html[data-style="glass"] #content #ddlThemes_chosen.chosen-with-drop .chosen-single,
+html[data-style="glass"] #content #ddlAccounts_chosen.chosen-with-drop .chosen-single {
+  border: 1px solid #e4e9f2;
+  box-shadow: 0 3px 5px 0 rgba(10, 37, 64, 0.25);
+}
+html[data-style="glass"] #content #ddlThemes_chosen .chosen-drop,
+html[data-style="glass"] #content #ddlAccounts_chosen .chosen-drop {
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #e4e9f2;
+  border-top: transparent;
+  box-shadow: 0 5px 5px 0 rgba(10, 37, 64, 0.25);
+}
+html[data-style="glass"] #content #ddlThemes_chosen .chosen-drop .chosen-search > input,
+html[data-style="glass"] #content #ddlAccounts_chosen .chosen-drop .chosen-search > input {
+  border-radius: 4px;
+  border: 1px solid #e4e9f2;
+}
+html[data-style="glass"] #content #ddlThemes_chosen .chosen-drop .chosen-search > input:focus,
+html[data-style="glass"] #content #ddlAccounts_chosen .chosen-drop .chosen-search > input:focus {
+  border: 1px solid #8f9bb3;
+}
+html[data-style="glass"] #content #ddlThemes_chosen .chosen-drop .chosen-results > .no-results,
+html[data-style="glass"] #content #ddlAccounts_chosen .chosen-drop .chosen-results > .no-results {
+  color: inherit;
+  background: inherit;
+}
+html[data-style="glass"] #content #ddlThemes_chosen .chosen-drop .chosen-results > .highlighted,
+html[data-style="glass"] #content #ddlAccounts_chosen .chosen-drop .chosen-results > .highlighted {
+  background-color: #f7f9fc;
+  background-image: none;
+  border-radius: 4px;
+  color: #0a2540;
+}

@@ -1,0 +1,438 @@
+#stats a {
+  color: #365aa2;
+}
+#stats a:hover {
+  color: #2d5ef2;
+}
+#stats .panel-widget .widget-heading {
+  background-color: #ffffff;
+  color: #0a2540;
+  border: none;
+  text-transform: none;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 22px 22px 10px 22px;
+}
+html[dir="rtl"] #stats .panel-widget .widget-heading {
+  padding: 22px 22px 10px 22px;
+}
+#stats .panel-widget td {
+  padding: 8px 24px;
+}
+#stats .panel-widget td .general-info-label {
+  font-size: 12px;
+  color: #586376;
+}
+#stats .panel-widget td .general-info-value {
+  font-size: 14px;
+}
+#stats .panel-widget .app-stat-data .ssl-error-icon {
+  color: #f1c40f;
+  font-size: 18px;
+}
+#stats .panel-widget .app-stat-data .ssl-link-container {
+  display: flex;
+  justify-content: center;
+}
+html[dir="ltr"] #stats .panel-widget .app-stat-data .ssl-link-container {
+  padding-right: 8px;
+}
+html[dir="rtl"] #stats .panel-widget .app-stat-data .ssl-link-container {
+  padding-left: 8px;
+}
+#stats .panel-widget .app-stat-data .ssl-link-container .link-button {
+  background-color: #e7ecfc;
+  color: #365aa2;
+  border: 1px solid #365aa2;
+  display: block;
+  width: 100%;
+  text-align: center;
+  border-radius: 4px;
+  font-weight: 500;
+  margin: 9px 0 6px 0;
+  padding: 6px;
+}
+#stats .panel-widget .app-stat-data .ssl-link-container .link-button:hover {
+  text-decoration: none;
+  color: #3264fc;
+  border: 1px solid #2d5ef2;
+}
+html[dir="ltr"] #stats .panel-widget .app-stat-data .ssl-link-container .link-button i {
+  margin-right: 3px;
+}
+html[dir="rtl"] #stats .panel-widget .app-stat-data .ssl-link-container .link-button i {
+  margin-left: 3px;
+}
+#stats .panel-widget#generalInfoSection table > tbody > tr:last-child :hover {
+  background-color: #f7f9fc;
+}
+#stats .panel-widget#generalInfoSection table > tbody > tr:last-child > td {
+  padding: 0;
+}
+#stats .panel-widget#generalInfoSection table > tbody > tr:last-child > td a {
+  display: block;
+  padding: 16px 24px 16px 24px;
+}
+#stats .panel-widget#generalInfoSection table > tbody > tr:last-child > td a::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f054";
+  float: right;
+  color: #8f9bb3;
+}
+html[dir="rtl"] #stats .panel-widget#generalInfoSection table > tbody > tr:last-child > td a::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f053";
+  float: left;
+}
+#stats #statsSection .app-name {
+  color: #586376;
+  font-size: 12px;
+  font-weight: 600;
+}
+#stats #statsSection .warning > .app-stat-data,
+#stats #statsSection .info > .app-stat-data,
+#stats #statsSection .success > .app-stat-data,
+#stats #statsSection .danger > .app-stat-data {
+  background-color: transparent;
+  box-shadow: none;
+}
+#stats #statsSection .limits-wrapper {
+  display: flex;
+}
+html[dir="ltr"] #stats #statsSection .limits-wrapper {
+  margin-right: 4px;
+}
+html[dir="rtl"] #stats #statsSection .limits-wrapper {
+  margin-left: 4px;
+}
+#stats #statsSection .limits-data {
+  flex: 1;
+  font-size: 14px;
+}
+#stats #statsSection .stats-fix-icon {
+  font-size: 25px;
+  margin-top: -7px;
+}
+#stats #statsSection .stats-fix-icon.danger {
+  color: #e74c3c;
+}
+#stats #statsSection .stats-fix-icon.warning {
+  color: #f1c40f;
+}
+#stats #statsSection .error-wrapper {
+  display: flex;
+}
+#stats #statsSection .error-name {
+  flex: 1;
+}
+#stats #statsSection .stats-error-icon {
+  font-size: 25px;
+  color: #e74c3c;
+  margin-top: -7px;
+}
+#stats #statsSection .link-button {
+  background-color: #e7ecfc;
+  color: #365aa2;
+  border: 1px solid #365aa2;
+  display: block;
+  width: 100%;
+  text-align: center;
+  border-radius: 4px;
+  font-weight: 500;
+  margin: 9px 0 6px 0;
+  padding: 6px;
+}
+#stats #statsSection .link-button:hover {
+  text-decoration: none;
+  color: #3264fc;
+  border: 1px solid #2d5ef2;
+}
+.welcome-panel .widget-heading {
+  background: #ffffff;
+  border: none;
+  color: #0a2540;
+  text-transform: none;
+}
+.welcome-panel .widget-heading .group-header-indicator {
+  color: rgba(10, 37, 64, 0.6);
+}
+.welcome-panel .widget-heading .group-header-indicator:hover,
+.welcome-panel .widget-heading .group-header-indicator:active,
+.welcome-panel .widget-heading .group-header-indicator:focus {
+  color: rgba(10, 37, 64, 0.8);
+}
+.welcome-panel .panel-body {
+  width: 100%;
+}
+.welcome-panel .title {
+  font-size: 1.4em;
+  font-weight: 600;
+  margin-bottom: 32px;
+}
+.welcome-panel .welcome-img,
+.welcome-panel .group-header,
+.welcome-panel .description {
+  display: none;
+}
+.welcome-panel .flex-row {
+  justify-content: center;
+  padding: 0;
+  text-align: center;
+}
+.welcome-panel .flex-item {
+  flex-direction: column;
+  align-items: center;
+  max-width: none;
+}
+.welcome-panel .itemTextWrapper {
+  text-align: center;
+  max-width: 300px;
+}
+.welcome-panel .icon-email_accounts {
+  background-image: url("img/email.svg");
+  background-size: contain;
+  background-position: initial;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+@media (max-width: 767px) {
+  .welcome-panel .icon-email_accounts {
+    width: 60px;
+    height: 60px;
+  }
+}
+.welcome-panel .icon-wp-toolkit,
+.welcome-panel .icon-site_publisher {
+  background-image: url("img/website.svg");
+  background-size: contain;
+  background-position: initial;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+@media (max-width: 767px) {
+  .welcome-panel .icon-wp-toolkit,
+  .welcome-panel .icon-site_publisher {
+    width: 60px;
+    height: 60px;
+  }
+}
+body[data-app-key="home"] {
+  /* Remove the interior search bar and accomodate for the gap introduced by the drag and drop area. */
+}
+body[data-app-key="home"] #content {
+  background: #f7f8fa;
+}
+body[data-app-key="home"] #jump-search {
+  display: none;
+}
+body[data-app-key="home"] .welcome-wrapper {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+body[data-app-key="home"] #boxes {
+  /**
+         * These sizes help keep text left (or right) aligned by taking the original indentation size
+         * for the group header text from Basic, before the group images were added, and adding the
+         * space allocated to the new group images and subtracting any padding on the text links.
+         */
+  margin-top: -10px;
+}
+body[data-app-key="home"] #boxes .panel {
+  background: #ffffff;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 3px 10px rgba(10, 37, 64, 0.05);
+  transition: box-shadow 0.5s;
+}
+body[data-app-key="home"] #boxes .panel:hover {
+  box-shadow: 0 3px 10px rgba(10, 37, 64, 0.25);
+}
+body[data-app-key="home"] #boxes .icon-container-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+}
+@media (min-width: 576px) and (min-height: 576px) {
+  body[data-app-key="home"] #boxes .icon-container-body {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 15px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+  }
+  html[dir="ltr"] body[data-app-key="home"] #boxes .icon-container-body {
+    padding-left: 35px;
+  }
+  html[dir="rtl"] body[data-app-key="home"] #boxes .icon-container-body {
+    padding-right: 35px;
+  }
+}
+body[data-app-key="home"] #boxes .item {
+  height: auto;
+  width: auto;
+  border-top: 1px solid #e4e9f2;
+}
+@media (min-width: 576px) and (min-height: 576px) {
+  body[data-app-key="home"] #boxes .item {
+    min-height: 3em;
+    width: 200px;
+    border-top: none;
+  }
+}
+body[data-app-key="home"] #boxes .itemImageWrapper {
+  display: none;
+}
+body[data-app-key="home"] #boxes .itemTextWrapper {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 1em 5px 1em 5px;
+  color: #365aa2;
+}
+html[dir="ltr"] body[data-app-key="home"] #boxes .itemTextWrapper {
+  padding-left: 40px;
+}
+@media (min-width: 576px) and (min-height: 576px) {
+  html[dir="ltr"] body[data-app-key="home"] #boxes .itemTextWrapper {
+    padding: 5px;
+  }
+}
+html[dir="rtl"] body[data-app-key="home"] #boxes .itemTextWrapper {
+  padding-right: 40px;
+}
+@media (min-width: 576px) and (min-height: 576px) {
+  html[dir="rtl"] body[data-app-key="home"] #boxes .itemTextWrapper {
+    padding: 5px;
+  }
+}
+@media (min-width: 576px) and (min-height: 576px) {
+  body[data-app-key="home"] #boxes .itemTextWrapper {
+    height: auto;
+    width: auto;
+    margin-bottom: 15px;
+  }
+  html[dir="ltr"] body[data-app-key="home"] #boxes .itemTextWrapper {
+    margin-right: 1em;
+  }
+  html[dir="rtl"] body[data-app-key="home"] #boxes .itemTextWrapper {
+    margin-left: 1em;
+  }
+}
+body[data-app-key="home"] #boxes .itemTextWrapper:hover,
+body[data-app-key="home"] #boxes .itemTextWrapper:active,
+body[data-app-key="home"] #boxes .itemTextWrapper:focus {
+  color: #2d5ef2;
+}
+body[data-app-key="home"] #boxes .itemTextWrapper:hover,
+body[data-app-key="home"] #boxes .itemTextWrapper:active,
+body[data-app-key="home"] #boxes .itemTextWrapper:focus {
+  background: #f7f9fc;
+}
+@media (min-width: 576px) and (min-height: 576px) {
+  body[data-app-key="home"] #boxes .itemTextWrapper:hover,
+  body[data-app-key="home"] #boxes .itemTextWrapper:active,
+  body[data-app-key="home"] #boxes .itemTextWrapper:focus {
+    background: none;
+  }
+}
+body[data-app-key="home"] #boxes .panel-heading {
+  text-transform: none;
+  border: none;
+  border-radius: inherit;
+  background: #ffffff;
+  color: #0a2540;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+@media (min-width: 576px) and (min-height: 576px) {
+  body[data-app-key="home"] #boxes .panel-heading {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+}
+body[data-app-key="home"] #boxes .panel-heading .group-header {
+  font-weight: 600;
+}
+body[data-app-key="home"] #boxes .panel-heading .group-header:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f7d9";
+  color: #ff5e1a;
+  display: inline-block;
+  width: 25px;
+}
+body[data-app-key="home"] #boxes .panel-heading .group-files:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f07c";
+}
+body[data-app-key="home"] #boxes .panel-heading .group-databases:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f1c0";
+}
+body[data-app-key="home"] #boxes .panel-heading .group-domains:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f0ac";
+}
+body[data-app-key="home"] #boxes .panel-heading .group-email:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f0e0";
+}
+body[data-app-key="home"] #boxes .panel-heading .group-metrics:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f201";
+}
+body[data-app-key="home"] #boxes .panel-heading .group-security:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f3ed";
+}
+body[data-app-key="home"] #boxes .panel-heading .group-software:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f5fc";
+}
+body[data-app-key="home"] #boxes .panel-heading .group-advanced:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f085";
+}
+body[data-app-key="home"] #boxes .panel-heading .group-preferences:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f1de";
+}
+body[data-app-key="home"] #boxes .panel-heading .group-sample_apps:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f492";
+}
+body[data-app-key="home"] #boxes .panel-heading .group-applications:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f009";
+}
+body[data-app-key="home"] #boxes .panel-heading .group-header-indicator {
+  color: #8f9bb3;
+}
+body[data-app-key="home"] #boxes .panel-heading .group-header-indicator.fa-minus:before {
+  content: "\f077";
+}
+body[data-app-key="home"] #boxes .panel-heading .group-header-indicator.fa-plus:before {
+  content: "\f078";
+}
+@media (min-width: 576px) and (min-height: 576px) {
+  body[data-app-key="home"] #boxes .panel-body {
+    border-top: 1px solid #e4e9f2;
+  }
+}

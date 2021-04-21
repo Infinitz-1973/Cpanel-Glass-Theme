@@ -1,0 +1,259 @@
+@import (reference) "variables/main";
+@import (reference) "mixins/main";
+@import "sidebar";
+
+// Welcome Panel styles
+@import "welcome";
+
+// These styles only apply to the home page (sea of links)
+body[data-app-key="home"] {
+    #content {
+        background: @body-background;
+    }
+
+    /* Remove the interior search bar and accomodate for the gap introduced by the drag and drop area. */
+    #jump-search {
+        display: none;
+    }
+    .welcome-wrapper {
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+
+    #boxes {
+        /**
+         * These sizes help keep text left (or right) aligned by taking the original indentation size
+         * for the group header text from Basic, before the group images were added, and adding the
+         * space allocated to the new group images and subtracting any padding on the text links.
+         */
+        @original-group-indent: 15px;
+        @additional-group-indent: 25px;
+        @text-link-padding: 5px;
+
+        @chevron-down: "\f078";
+        @chevron-up: "\f077";
+
+        margin-top: -10px;
+
+        .panel {
+            background: @primary-background;
+            border: none;
+            border-radius: 4px;
+            box-shadow: 0 3px 10px @box-shadow;
+            transition: box-shadow 0.5s;
+
+            &:hover {
+                box-shadow: 0 3px 10px @box-shadow-active;
+            }
+        }
+
+        .icon-container-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0;
+
+            .media-query-not-mobile({
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                padding: 15px;
+                padding-top: ( 20px - @text-link-padding );
+                padding-bottom: 5px;
+
+                html[dir="ltr"] & {
+                    padding-left: (@original-group-indent + @additional-group-indent - @text-link-padding);
+                }
+
+                html[dir="rtl"] & {
+                    padding-right: (@original-group-indent + @additional-group-indent - @text-link-padding);
+                }
+            });
+        }
+
+        .item {
+            height: auto;
+            width: auto;
+            border-top: 1px solid @shade-medium;
+
+            .media-query-not-mobile({
+                min-height: 3em;
+                width: 200px;
+                border-top: none;
+            });
+        }
+
+        // Old app icons
+        .itemImageWrapper {
+            display: none;
+        }
+
+        // App text link container
+        .itemTextWrapper {
+            width: 100%;
+            height: 100%;
+
+            margin: 0;
+            padding: 1em @text-link-padding 1em @text-link-padding;
+
+            html[dir="ltr"] & {
+                padding-left: (
+                    @original-group-indent + @additional-group-indent
+                );
+                .media-query-not-mobile({ padding: @text-link-padding });
+            }
+
+            html[dir="rtl"] & {
+                padding-right: (
+                    @original-group-indent + @additional-group-indent
+                );
+                .media-query-not-mobile({ padding: @text-link-padding });
+            }
+
+            .media-query-not-mobile({
+                height: auto;
+                width: auto;
+
+                margin-bottom: ( 20px - @text-link-padding );
+
+                html[dir="ltr"] & {
+                    margin-right: 1em;
+                }
+
+                html[dir="rtl"] & {
+                    margin-left: 1em;
+                }
+            });
+
+            color: @link;
+
+            &:hover,
+            &:active,
+            &:focus {
+                color: @link-hover;
+            }
+
+            &:hover,
+            &:active,
+            &:focus {
+                background: @shade-light;
+                .media-query-not-mobile({ background: none; });
+            }
+        }
+
+        .panel-heading {
+            // Resets
+            text-transform: none;
+            border: none;
+            border-radius: inherit;
+
+            background: @primary-background;
+            color: @primary-dark;
+
+            padding-top: 22px;
+            padding-bottom: 22px;
+
+            .media-query-not-mobile({
+                padding-top: 18px;
+                padding-bottom: 18px;
+            });
+
+            .group-header {
+                font-weight: 600;
+
+                // Add group icon
+                &:before {
+                    .fa-fas("\f7d9"); // Fallback icon for custom groups
+                    color: @accent;
+                    display: inline-block;
+                    width: @additional-group-indent;
+                }
+            }
+
+            .group-files {
+                &:before {
+                    .fa-fas("\f07c");
+                }
+            }
+
+            .group-databases {
+                &:before {
+                    .fa-fas("\f1c0");
+                }
+            }
+
+            .group-domains {
+                &:before {
+                    .fa-fas("\f0ac");
+                }
+            }
+
+            .group-email {
+                &:before {
+                    .fa-fas("\f0e0");
+                }
+            }
+
+            .group-metrics {
+                &:before {
+                    .fa-fas("\f201");
+                }
+            }
+
+            .group-security {
+                &:before {
+                    .fa-fas("\f3ed");
+                }
+            }
+
+            .group-software {
+                &:before {
+                    .fa-fas("\f5fc");
+                }
+            }
+
+            .group-advanced {
+                &:before {
+                    .fa-fas("\f085");
+                }
+            }
+
+            .group-preferences {
+                &:before {
+                    .fa-fas("\f1de");
+                }
+            }
+
+            .group-sample_apps {
+                &:before {
+                    .fa-fas("\f492");
+                }
+            }
+
+            .group-applications {
+                &:before {
+                    .fa-fas("\f009");
+                }
+            }
+
+            // Change expand/collapse icons from plus/minus to chevrons
+            .group-header-indicator {
+                color: @shade-hard;
+
+                &.fa-minus:before {
+                    content: @chevron-up;
+                }
+
+                &.fa-plus:before {
+                    content: @chevron-down;
+                }
+            }
+        }
+
+        .panel-body {
+            .media-query-not-mobile({
+                border-top: 1px solid @shade-medium;
+            });
+        }
+    }
+}

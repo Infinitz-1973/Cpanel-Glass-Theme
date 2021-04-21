@@ -1,0 +1,65 @@
+@import (reference) "variables/main";
+
+html[data-style="glass"] #content {
+    // chosen component style overrides
+    #ddlThemes_chosen,
+    #ddlAccounts_chosen {
+        font-size: 14px;
+
+        .chosen-single {
+            border: @input-border;
+            background-image: none;
+            background-color: @input-background;
+            box-shadow: 0 0 transparent;
+            height: 34px;
+            padding-top: 4px;
+            color: @primary-dark;
+
+            div {
+                padding-top: 5px;
+            }
+        }
+
+        /* When dropdown is focused */
+        &.chosen-container-active .chosen-single {
+            background-color: @input-focus-background;
+            color: @primary-dark;
+            border: @input-focus-border;
+        }
+
+        /* When dropdown is expanded */
+        &.chosen-with-drop .chosen-single {
+            border: @input-border;
+            box-shadow: 0 3px 5px 0 @box-shadow-active;
+        }
+
+        .chosen-drop {
+            background-color: @input-focus-background;
+            background-image: none;
+            border: @input-border;
+            border-top: transparent;
+            box-shadow: 0 5px 5px 0 @box-shadow-active;
+
+            .chosen-search > input {
+                border-radius: @border-radius;
+                border: @input-border;
+
+                &:focus {
+                    border: @input-focus-border;
+                }
+            }
+
+            .chosen-results > .no-results {
+                color: inherit;
+                background: inherit;
+            }
+
+            .chosen-results > .highlighted {
+                background-color: @shade-light;
+                background-image: none;
+                border-radius: @border-radius;
+                color: @primary-dark;
+            }
+        }
+    }
+}
