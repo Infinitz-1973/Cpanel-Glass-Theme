@@ -8,7 +8,7 @@ New Cpanel Glass Theme for Older Versions of Cpanel/whm (Tested with Version 94.
 
 1.Download the Repo and Go to Icons folder Unzip the .zip File.
 
-2.Now Compress The Repo to .tar.gz or Download from Here : https://infinitz.eu.org/downloads/glass.tar.gz
+2.Now Compress The Repo to .tar.gz
 
 3.Now Go to your whm UnderCpanel>Customization>Customize style>Upload a style
 
